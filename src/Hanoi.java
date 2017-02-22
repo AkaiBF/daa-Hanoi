@@ -12,7 +12,16 @@
  * @since 22-02-2017
  */
 
-class Hanoi {
+public class Hanoi {
+  
+  /**
+   * Recursive function to move a disk from a tower to another one.
+   * 
+   * @param from Specifies the tower we are taking the disk from.
+   * @param to Specifies the tower we are taking the disk to.
+   * @param other Specifies the tower that we use as support.
+   * @param n Specifies the number of disks left unmoved in the first tower.
+   */
   static void hanoi(char from, char to, char other, int n) {
     if(n == 0) return;
     hanoi(from, other, to, n-1);
