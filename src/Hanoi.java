@@ -30,7 +30,21 @@ public class Hanoi {
   }
   
   public static void main(String[] args){
-    final int DISCOS = Integer.parseInt(args[0]);
-    hanoi('A', 'B', 'C', DISCOS);
+    if(args.length == 1 || (args.length == 2 && args[1].equals("debug"))){
+      try {
+        final int DISCOS = Integer.parseInt(args[0]);
+        if(DISCOS < 0)
+        System.out.println("Uso incorrecto. El uso es $java Hanoi <número_discos> [debug] .");  
+        else
+        hanoi('A', 'B', 'C', DISCOS);
+      } catch(NumberFormatException error) {
+        if(args[0].equals("--help"))
+        System.out.println("$java Hanoi <número_discos> [debug]");
+        else
+        System.out.println("Uso incorrecto. El uso es $java Hanoi <número_discos> [debug] .");  
+      }
+    }else {
+      System.out.println("Uso incorrecto. El uso es $java Hanoi <número_discos> [debug] .");  
+    }
   }
 }
