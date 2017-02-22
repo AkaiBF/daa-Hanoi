@@ -1,0 +1,56 @@
+body{
+    background-image: url("../img/texture.jpg");
+    background-size: cover;
+}
+ul{
+    background-color: #FFF;
+}
+nav{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+li{
+    font-family: "Corbel", "Adobe Gothic Std B";
+    font-size:18px;
+    font-weight: bold;
+}
+a{
+    color:#B73CC5;
+}
+#logoull{
+    left: 70px;
+    position: absolute;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    min-height: 30px;
+    bottom: 0px;
+}
+i{
+    width: 10px;
+    height: 10px;
+}
+.fa-twitter{
+    position: absolute;
+    right: 20px;
+}
+
+.falsecaret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed transparent;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+#brain {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
